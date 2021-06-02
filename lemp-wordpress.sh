@@ -29,7 +29,7 @@ sudo docker run -td --name db \
 -v /home/ubuntu/database:/var/lib/mysql \
 --net my-net mariadb
 
-# running the docker container for Database
+# running the docker container for Wordpress
 sudo docker run -td --name wordpress \
 -e WORDPRESS_DB_HOST=db:3306 \
 -e WORDPRESS_DB_NAME=wordpressdb \
